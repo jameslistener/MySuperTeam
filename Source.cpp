@@ -27,11 +27,13 @@ int main()
 	printf("Got popped: %d\n", e->data);
 	free(e);
 
+	e = pop(myList);
+	printf("Got popped: %d\n", e->data);
+	free(e);
+
 	printList(myList);
 
 	clean(myList);
-
-	printList(myList);
 
 	system("pause");
 	return 0;
